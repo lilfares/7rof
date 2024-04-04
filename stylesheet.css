@@ -1,0 +1,80 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.png');
+    /* Specify the URL of your background image */
+    background-size: cover;
+    /* Cover the entire viewport */
+    background-position: center;
+    /* Center the background image */
+}
+
+.container {
+    max-width: 550px;
+    /* Adjust as needed */
+    overflow: hidden;
+    /* Prevents content from overflowing */
+}
+
+.hex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hex-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 19px;
+    /* Adjust the margin between rows */
+}
+
+.hexagon {
+    position: relative;
+    width: 90px;
+    /* Adjust width to make hexagons more box-like */
+    height: 90px;
+    /* Adjust height to make hexagons more box-like */
+    margin: 1px;
+    /* Adjust spacing between hexagons */
+}
+
+@media (max-width: 450px) {
+    .hex-row {
+        margin-bottom: 2px;
+        /* Adjust margin for smaller screens */
+    }
+
+    .hex-row:nth-child(5n + 1) .hexagon {
+        margin-left: 0px;
+        /* Reset margin for every fifth hexagon in a row */
+    }
+}
+
+.hex-row:nth-child(2) {
+    margin-left: 90px;
+    /* Adjust the margin for the second row */
+    margin-top: -42px;
+    margin-bottom: -23px;
+}
+
+.hex-row:nth-child(3) {
+    margin-left: 0px;
+    /* Adjust the margin for the third row */
+}
+
+.hex-row:nth-child(4) {
+    margin-left: 90px;
+    /* Adjust the margin for the second row */
+    margin-top: -42px;
+    margin-bottom: -23px;
+}
+
+.hex-row:last-child {
+    margin-right: 0;
+    /* Adjust the margin for the last row */
+}
