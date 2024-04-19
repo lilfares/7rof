@@ -5,7 +5,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('background2.png');
+    background-image: url('background4.png');
     /* Specify the URL of your background image */
     background-size: cover;
     /* Cover the entire viewport */
@@ -14,7 +14,7 @@ html {
 }
 
 .container {
-    max-width: 550px;
+    max-width: 750px;
     /* Adjust as needed */
     overflow: hidden;
     /* Prevents content from overflowing */
@@ -35,9 +35,9 @@ html {
 
 .hexagon {
     position: relative;
-    width: 90px;
+    width: 120px;
     /* Adjust width to make hexagons more box-like */
-    height: 90px;
+    height: 120px;
     /* Adjust height to make hexagons more box-like */
     margin: 1px;
     /* Adjust spacing between hexagons */
@@ -56,10 +56,10 @@ html {
 }
 
 .hex-row:nth-child(2) {
-    margin-left: 90px;
+    margin-left: 120px;
     /* Adjust the margin for the second row */
-    margin-top: -42px;
-    margin-bottom: -23px;
+    margin-top: -50px;
+    margin-bottom: -33px;
 }
 
 .hex-row:nth-child(3) {
@@ -68,10 +68,10 @@ html {
 }
 
 .hex-row:nth-child(4) {
-    margin-left: 90px;
+    margin-left: 120px;
     /* Adjust the margin for the second row */
-    margin-top: -42px;
-    margin-bottom: -23px;
+    margin-top: -50px;
+    margin-bottom: -33px;
 }
 
 .hex-row:last-child {
